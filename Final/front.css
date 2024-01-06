@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&family=Josefin+Sans&family=Rubik+Doodle+Shadow&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(123, 123, 123) 100%);
+    font-family: 'Tektur', sans-serif;
+}
+
+.navlist {
+    width: -webkit-fill-available;
+    background-color: #023047;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 2px solid black;
+}
+
+.leftdiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rightdiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.leftdiv a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Concert One' 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#search {
+    width: 700px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: #023047;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#search::placeholder {
+    color: white;
+}
+
+.rightdiv img {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.back{
+    width: 100vw;
+    height: 99vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.inside{
+    position: absolute;
+    top: 250px;
+    padding-left: 90px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inside div{
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 45px;
+    width: 80vw;
+    text-shadow: 0px 0px 10px #023047;
+}
+
+.inside input{
+    outline: none;
+    padding:10px 20px;
+    border-radius: 10px;
+    font-size: 40px;
+    background-color: #fca311;
+    font-weight: 700;
+    cursor: pointer;
+}
