@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Stop Movie- Home</title>
+    <link rel="website icon" type="png" href="/image/Small Logo.png" />
+
+    <link rel="stylesheet" href="style-home.css">
+</head>
+
+<body>
+    <nav class="navlist">
+        <div class="leftdiv">
+            <a href="HTML-home.html" id="special"><img src="/image/One Stop Movie.png" alt="One Stop Movie" ></a>
+        </div>
+        <div class="rightdiv">
+            <div class="bar" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="#mid" class="hidden">Home</a>
+            <a href="#main1" class="hidden">Search</a>
+            <div id="Category" class="hidden">Category
+                <ul class="categoryDropdown">
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#main">TV Sereies</a></li>
+                </ul>
+            </div>
+            <a class="hidden" href="#bottom">About Us</a>
+            <a title="Profile" href="HTML-profile.html"><img src="/image/Untitled design.png" id="Profile"
+                    alt="Profile"></a>
+        </div>
+    </nav>
+    <div id="hidden" class="hidden">
+        <div class="slidenav">
+            <a href="#mid">Home</a>
+            <a href="#search">Search</a>
+            <div class="categoryDropdown2">Category
+                <ul class="categoryDropdown">
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#main">TV Sereies</a></li>
+                </ul>
+            </div>
+            <a href="#bottom">About Us</a>
+        </div>
+    </div>
+
+    <div class="mid" id="mid">
+
+        <div class="poster">
+            <img src="https://www.screenspy.com/wp-content/gallery/lucifer_3x01_they_are_back/Gotham_V2b_hires1_resized.jpg"
+                alt="">
+            <div class="heroBannerContent">
+                <span id="title">Welcome.</span>
+                <span id="subTitle">Laughter. Tears. Thrills. Find it all</span>
+                <h3 class="message" id="greet"></h3>
+            </div>
+        </div>
+
+        <div class="border"></div>
+        <div class="sortHead">
+            <h2>Trending</h2>
+            <ul class="sort">
+                <li id="movies"><a>Movies</a></li>
+                <li id="tv"><a>TV Sereis</a></li>
+            </ul>
+        </div>
+        <main id="main2"></main>
+
+        <div class="border"></div>
+
+        <div class="sortHead">
+            <h2>MOVIE SERIES</h2>
+            <ul class="sort">
+                <li id="all"><a>All</a></li>
+                <li id="nowplaying"><a>Now Playing</a></li>
+                <li id="popular"><a>Popular</a></li>
+                <li id="topRated"><a>Top Rated</a></li>
+                <li id="upcoming"><a>Upcoming</a></li>
+            </ul>
+        </div>
+        <main id="main"></main>
+
+        <div class="border"></div>
+
+
+        <div class="sortHead">
+            <h2>TV SERIES</h2>
+            <ul class="sort">
+                <li id="all1"><a>All</a></li>
+                <li id="arivingToday"><a>Ariving Today</a></li>
+                <li id="ontheAir"><a>On The Air</a></li>
+                <li id="popular1"><a>Popular</a></li>
+                <li id="topRated1"><a>Top Rated</a></li>
+            </ul>
+        </div>
+        <main id="main1"></main>
+
+        <div class="border"></div>
+        <form id="form">
+            <input type="search" name="search" id="search" placeholder="Search Your Movie ">
+        </form>
+        <div id="tags"></div>
+        <div id="searchname"></div>
+        <main id="searchResult"></main>
+        <div class="pagination">
+            <div class="page" id="prev">Previous Page</div>
+            <div class="current" id="current">1</div>
+            <div class="page" id="next">Next Page</div>
+        </div>
+    </div>
+
+    <footer id="bottom">
+        <div class="last">
+            <div class="classified">
+                <img src="/image/One Stop Movie.png" width="300px" alt="One Stop Movie">
+                <button type="button" id="Signout" class="logout2">Logout</button>
+            </div>
+            <h3 class="message" id="msg"></h3>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            if (document.getElementById('hidden').classList.contains('hidden')) {
+                document.getElementById('hidden').classList.remove('hidden')
+            } else {
+                document.getElementById('hidden').classList.add('hidden')
+            }
+        }
+    </script>
+    <script type="module" src="script-home1.js"></script>
+    <script src="script-home_dataFetch.js"></script>
+</body>
+
+</html>

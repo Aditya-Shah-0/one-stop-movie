@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Concert+One&family=Josefin+Sans&family=Rubik+Doodle+Shadow&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Tektur', sans-serif;
+    background-image: linear-gradient(0deg, #212529, #343a40, #495057, #6c757d);
+    opacity: 1;
+    margin-top: 20px;
+}
+
+.heading div {
+    font-family: "Ribeye", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 70px;
+    text-decoration: underline;
+    color: #eee;
+}
+
+body a button {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 70px;
+    position: absolute;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+body a button:hover {
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 70px;
+    position: absolute;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+body a button:focus {
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 70px;
+    position: absolute;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+
+.wholeProfile {
+    width: 85vw;
+    margin: auto;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.leftProfile {
+    background-color: #eee;
+    gap: 20px;
+    padding: 10px;
+    width: 60%;
+    border-radius: 20px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 20px 4px black;
+}
+
+.rightProfile {
+    align-items: flex-start;
+    background-color: #eee;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 7px black;
+}
+
+.rightProfile h2 {
+    font-size: 55px;
+    text-decoration: underline;
+}
+
+.profileimg img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.imgname {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.movielist {
+    /* background-color: violet; */
+    gap: 20px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    border-radius: 20px;
+
+}
+
+.moviePoster img {
+    width: 150px;
+    border-radius: 10px;
+    border: #eee 2px solid;
+    box-shadow: 0px 0px 5px 5px black;
+}
+
+.movieDetails {
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.movieName {
+    font-size: 45px;
+    font-weight: 700;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    text-shadow: 1px 7px 10px black;
+}
+
+.movieOverview {
+    font-size: 16px;
+}
+
+.dateetc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.movieDate {
+    font-size: 20px;
+}
+
+.movierating {
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: thistle;
+    padding: 10px;
+}
+
+.logout2 {
+    padding: 15px 20px;
+    border: none;
+    background-color: #ffb703;
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (min-width: 950px) and (max-width:1150px) {
+    .wholeProfile {
+        width: 95vw;
+        margin: auto;
+        gap: 20px;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+
+    .movieDate {
+        font-size: 15px;
+    }
+
+    .movierating {
+        font-size: 15px;
+        border-radius: 50%;
+        background-color: thistle;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 650px) and (max-width:950px) {
+    .wholeProfile {
+        width: 85vw;
+        margin: auto;
+        gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .movieDate {
+        font-size: 15px;
+    }
+
+    .movierating {
+        font-size: 15px;
+        border-radius: 50%;
+        background-color: thistle;
+        padding: 10px;
+    }
+
+    .leftProfile {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .profileimg img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 470px) and (max-width:650px) {
+    .wholeProfile {
+        width: 85vw;
+        margin: auto;
+        gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .movieDate {
+        font-size: 15px;
+    }
+
+    .movierating {
+        font-size: 15px;
+        border-radius: 50%;
+        background-color: thistle;
+        padding: 10px;
+    }
+
+    .leftProfile {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .profileimg img {
+        width: 150px;
+    }
+
+    .imgname {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 0px) and (max-width:470px) {
+    .wholeProfile {
+        width: 85vw;
+        margin: auto;
+        gap: 20px;
+        align-items: center;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .movieDetails {
+        gap: 0px;
+    }
+
+    .movieDate {
+        font-size: 15px;
+    }
+
+    .details {
+        display: none;
+    }
+
+    .movieName {
+        font-size: 25px;
+        -webkit-text-stroke: 1px black;
+        color: white;
+        text-shadow: 1px 3px 5px black;
+    }
+
+    .movierating {
+        font-size: 15px;
+        border-radius: 50%;
+        background-color: thistle;
+        padding: 10px;
+    }
+
+    .leftProfile {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .profileimg img {
+        width: 150px;
+    }
+
+    .imgname {
+        font-size: 25px;
+    }
+
+    .movieOverview {
+        display: none;
+    }
+
+    .rightProfile h2 {
+        font-size: 25px;
+    }
+
+    .movielist {
+        flex-direction: column;
+        gap: 5px;
+    }
+    body a button {
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 70px;
+        position: absolute;
+        margin-left: 0px;
+        top: 60px;
+        border-radius: 50%;
+    }
+    .heading div{
+        font-size: 45px;
+    }
+}

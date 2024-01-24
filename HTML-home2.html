@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie</title>
+    <link rel="website icon" type="png" href="/image/Small Logo.png" />
+
+    <link rel="stylesheet" href="style-home2.css">
+</head>
+
+<body>
+
+    <nav class="navlist">
+        <div class="leftdiv">
+            <a href="HTML-home.html" id="special"><img src="/image/One Stop Movie.png" alt="One Stop Movie" ></a>
+        </div>
+        <div class="rightdiv">
+            <div class="bar" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <a href="#" class="hidden">Home</a>
+            <a href="HTML-home.html#main1" class="hidden">Search</a>
+            <div id="Category" class="hidden">Category
+                <ul class="categoryDropdown">
+                    <li><a href="HTML-home.html#movies">Movies</a></li>
+                    <li><a href="HTML-home.html#main">TV Sereies</a></li>
+                </ul>
+            </div>
+            <a class="hidden" href="#bottom">About Us</a>
+            <a title="Profile" href="HTML-profile.html"><img src="/image/Untitled design.png" id="Profile"
+                    alt="Profile"></a>
+        </div>
+    </nav>
+    <div id="hidden" class="hidden">
+        <div class="slidenav">
+            <a href="#">Home</a>
+            <a href="HTML-home.html#main1">Search</a>
+            <div class="categoryDropdown2">Category
+                <ul class="categoryDropdown">
+                    <li><a href="HTML-home.html#movies">Movies</a></li>
+                    <li><a href="HTML-home.html#main">TV Sereies</a></li>
+                </ul>
+            </div>
+            <a href="#bottom">About Us</a>
+        </div>
+    </div>
+
+    <div id="import"></div>
+
+    <div class="border"></div>
+
+    <div class="sortHead">
+        <h2>RELATED</h2>
+    </div>
+    <main id="main"></main>
+
+    <div id="main_grid"></div>
+    <div class="card"></div>
+
+    <footer id="bottom">
+        <div class="last">
+            <div class="classified">
+                <img src="/image/One Stop Movie.png"  alt="">
+                <button type="button" id="Signout" class="logout2">Logout</button>
+            </div>
+            <h3 class="message" id="msg"></h3>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+            if (document.getElementById('hidden').classList.contains('hidden')) {
+                document.getElementById('hidden').classList.remove('hidden')
+            } else {
+                document.getElementById('hidden').classList.add('hidden')
+            }
+        }
+    </script>
+    <script type="module" src="script-home2.js"></script>
+</body>
+
+</html>
